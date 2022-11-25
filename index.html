@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SuperDeveloper</title>
+    <meta name="description" content="プロフィールページです">
+    <link rel="icon" href="images/favicon.jpeg">
+    <script src="scripts/vendors/pace.js"></script>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="scripts/vendors/gsap.min.js" defer></script>
+    <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
+    <script src="scripts/libs/hero-slider.js" defer></script>
+
+    <script src="scripts/vendors/scroll-polyfill.js" defer></script>
+    <script src="scripts/libs/scroll.js" defer></script>
+
+    <script src="scripts/libs/text-animation.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <!-- <img class="logo__img" src="images/logo.svg" /> -->
+              <span class="logo__title">SuperDeveloper</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item"><a href="#profile">Profile</a></li>
+                <li class="header__li item"><a href="#favarite">Favarite</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div id="content">
+          <div class="hero">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">オレンジ</div>
+                  <img src="images/1.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">レモン</div>
+                  <img src="images/2.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">キウイ</div>
+                  <img src="images/3.jpeg" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="hero__title">桃</div>
+                  <img src="images/4.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">苺</div>
+                  <img src="images/5.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">さくらんぼ</div>
+                  <img src="images/6.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">りんご</div>
+                  <img src="images/7.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">梨</div>
+                  <img src="images/8.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">ぶどう</div>
+                  <img src="images/9.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">パイナップル</div>
+                  <img src="images/10.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">バナナ</div>
+                  <img src="images/11.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">メロン</div>
+                  <img src="images/12.jpeg" alt="" />
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+
+            </div>
+          </div>
+
+          <div id="main-content">
+            <main>
+              <section id="profile" class="travel">
+                <div>
+                  <h2 class="main-title tween-animate-title">
+                    Profile
+                  </h2>
+                </div>
+                <div class="travel__inner">
+                  仕事は、企業向け製品を自社開発し、Webアプリ開発に携わっています。<br>
+                  ユーザにとって、より良い物を作るために、妥協せずに、アグレッシブに開発にチャレンジすることにやりがいを感じます。<br>
+                  以下の言語を使ってます。<br>
+                  rails/ruby/js/coffee/jquery/react/css/sass/mysql/solr/chef/Capistrano/jenkins/git<br>
+                  <br>
+                  体に良いことにも気づき、最近は果物にハマっています。
+                </div>
+              </section>
+
+              <section id="favarite" class="travel">
+                <div>
+                  <h2 class="main-title tween-animate-title">
+                    Favarite
+                  </h2>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/1.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">オレンジ</span>
+                      </div>
+                      <div class="travel__sub sub-title item">orange</div>
+                      <div class="travel__description item">
+                        <p>
+                          オレンジには粘膜を保護し、肌の調子を整え、免疫力を上げるビタミンCが多く含まれています。 100グラム中の含有量は、ネーブルが60ミリグラム、バレンシアが40ミリグラム。 ネーブルなら1個食べるだけで、大人が1日に必要なビタミンCを摂取することができます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">レモン</span>
+                      </div>
+                      <div class="travel__sub sub-title item">lemon</div>
+                      <div class="travel__description item">
+                        <p>
+                          レモンは柑橘類の中でも多くのビタミンCを含む、ビタミンCの代名詞的な存在の果物です。 クエン酸も豊富に含まれており、ビタミンCの効果と合わせて美肌効果や疲労回復、風邪予防などに効果を発揮します。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/2.jpeg" />
+                  </div>
+                </div>
+
+
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/3.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">キウイ</span>
+                      </div>
+                      <div class="travel__sub sub-title item">kiwifruit</div>
+                      <div class="travel__description item">
+                        <p>
+                          キウイの最も特徴的な栄養素といえば、ビタミンC。 「ビタミンCが豊富」といわれる果物や野菜の中でも、キウイのビタミンC含有量は特に多いことで知られています。 1日に必要とされるビタミンCは成人で100mgとされているところ、キウイ1個（約100g）に含まれるビタミンCはなんと70～140mg。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">桃</span>
+                      </div>
+                      <div class="travel__sub sub-title item">peach</div>
+                      <div class="travel__description item">
+                        <p>
+                          桃はバラ科サクラ属の植物です。 果実だけでなく蕾や種子、葉にも健康成分が豊富に含まれています。 果実には食物繊維、カリウム、クエン酸などが豊富に含まれているため、腸内環境を整える効果や疲労回復効果があります。 また近年の研究により、糖尿病を予防する効果も期待できます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/4.jpeg" />
+                  </div>
+                </div>
+
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/5.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">苺</span>
+                      </div>
+                      <div class="travel__sub sub-title item">strawberry</div>
+                      <div class="travel__description item">
+                        <p>
+                          いちごは美味しいだけでなく栄養も満点。 ビタミンCが豊富に含まれており、1日に6〜7粒食べるだけで1日に必要なビタミンCを補えるほどです。 ビタミンCは美肌作りや風邪予防にも効果が期待できる栄養素です。 また、食物繊維も含まれており、腸内環境を整える効果や生活習慣病予防にも効果が期待できます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">さくらんぼ</span>
+                      </div>
+                      <div class="travel__sub sub-title item">cherry</div>
+                      <div class="travel__description item">
+                        <p>
+                          さくらんぼの栄養主成分となるのは、ブドウ糖（糖質）、カリウム、鉄、リンといったミネラルを含む栄養成分、その他にはカロチン、ビタミンＢ１、Ｂ２、Ｃなどの栄養成分も含まれております。 さくらんぼの品種における「酸味」というのは、主にリンゴ酸、クエン酸、酒石酸、コハク酸などの有機酸が栄養成分として含まれております。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/6.jpeg" />
+                  </div>
+                </div>
+
+
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/7.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">りんご</span>
+                      </div>
+                      <div class="travel__sub sub-title item">apple</div>
+                      <div class="travel__description item">
+                        <p>
+                          りんごには不溶性食物繊維と水溶性食物繊維の両方が含まれています。 「大腸の水分を吸収して便を増やす」「ぜんどう運動を促進させ便の排出をサポートする」などの効果があります。 「便を軟らかくする」「便の滑りをよくする」などの効果があります。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">梨</span>
+                      </div>
+                      <div class="travel__sub sub-title item">pear</div>
+                      <div class="travel__description item">
+                        <p>
+                          梨には肌を健やかに保つポリフェノール、エネルギーのもととなる果糖、肌荒れを防いでくれるタンパク質分解酵素なども多く含まれています。 また、梨に含まれるソルビトールや食物繊維のリグニンは、便秘を解消して体内を綺麗にしてくれる効果があります。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/8.jpeg" />
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/9.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">ぶどう</span>
+                      </div>
+                      <div class="travel__sub sub-title item">grape</div>
+                      <div class="travel__description item">
+                        <p>
+                          ブドウにはポリフェノールが沢山含まれています。 特に皮や種の部分に多く、これはガンや動脈硬化の予防に効果があるといわれています。 また、その中のアントシアニンは色素成分で赤ブドウに沢山含まれており、目の疲れや糖尿病による目の病気など、視力回復につながる重要な役割を果たす成分として注目されています。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">パイナップル</span>
+                      </div>
+                      <div class="travel__sub sub-title item">pineapple</div>
+                      <div class="travel__description item">
+                        <p>
+                          パイナップルには、美肌成分のエース・ビタミンCもたっぷり。 抗酸化作用で紫外線ダメージや毛穴の開きを軽減したり、ニキビを改善したりする効果が期待できます。 コラーゲンの合成を促す働きもあるので、肌のハリ・ツヤを保つのにも必要な成分です。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/10.jpeg" />
+                  </div>
+                </div>
+
+
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/11.jpeg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">バナナ</span>
+                      </div>
+                      <div class="travel__sub sub-title item">banana</div>
+                      <div class="travel__description item">
+                        <p>
+                          バナナには体内の塩分を排出し、むくみを解消するカリウムが豊富に含まれています。 また食物繊維が豊富なのでお腹の調子を整えてお通じもスムーズになります。 さらに必須アミノ酸のメチオニンやリジンがビタミンB6・C・ナイアシン(B3)・鉄にはたらきかけることで、カルニチンという脂肪燃焼を促進する成分を合成します。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel__inner">
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">メロン</span>
+                      </div>
+                      <div class="travel__sub sub-title item">melon</div>
+                      <div class="travel__description item">
+                        <p>
+                          メロンのなかでも赤肉メロンはβカロテンの含有量が多いことから、老化を予防する抗酸化作用やがん予防に効果が期待されており、風邪の予防にも役立ちます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/12.jpeg" />
+                  </div>
+                </div>
+
+              </section>
+
+            </main>
+
+          </div>
+        </div>
+
+        <div class="footer appear up">
+          <div class="logo item">
+            <!-- <img class="logo__img" src="images/logo.svg" /> -->
+            <span class="logo__title">SuperDeveloper</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="#profile">Profile</a></li>
+              <li class="footer__li item"><a href="#favarite">Favarite</a></li>
+            </ul>
+            <div class="footer__copyright item">&copy; 2022 taku</div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
